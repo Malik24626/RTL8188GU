@@ -12,9 +12,7 @@ Steps to Set Up RTL8188GU on Kali Linux
 # 1. Download the Firmware
 First, download the rtl8710bufw_SMIC.bin file from this repository.
 
-Using wget:
-
-sudo git clon https://github.com/Malik24626/rtl8188gu-kali-setup/raw/main/rtl8710bufw_SMIC.bin
+sudo git clone https://github.com/Malik24626/rtl8188gu-kali-setup/raw/main/rtl8710bufw_SMIC.bin
 
 # 2. Install the Firmware
 Copy the downloaded firmware file to the system firmware directory (/lib/firmware/rtlwifi/):
