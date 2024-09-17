@@ -1,5 +1,5 @@
 # rtl8188gu-kali-setup
-RTL8188GU on Kali Linux
+#RTL8188GU on Kali Linux
 This repository provides the missing firmware file (rtl8710bufw_SMIC.bin) required for the RTL8188GU Wi-Fi chipset on Kali Linux. Although Kali Linux includes the driver (rtl8xxxu) by default, it does not come with the necessary firmware file for the RTL8188GU chipset.
 
 Overview
@@ -8,17 +8,17 @@ If your Wi-Fi adapter uses the RTL8188GU chipset and it is not functioning on Ka
 This repository contains the required .bin firmware file and instructions to get your adapter up and running.
 
 Steps to Set Up RTL8188GU on Kali Linux
-1. Download the Firmware
+#1. Download the Firmware
 First, download the rtl8710bufw_SMIC.bin file from this repository.
 
 Using wget:
 
 wget https://github.com/Malik24626/rtl8188gu-kali-setup/raw/main/rtl8710bufw_SMIC.bin
-2. Install the Firmware
+#2. Install the Firmware
 Copy the downloaded firmware file to the system firmware directory (/lib/firmware/rtlwifi/):
 
 sudo cp rtl8710bufw_SMIC.bin /lib/firmware/rtlwifi/
-3. Load the Driver
+#3. Load the Driver
 Once the firmware is in place, you need to load the rtl8xxxu module (driver). The driver is already included in Kali Linux, so there’s no need to compile or install it separately.
 
 To load the driver:
@@ -26,7 +26,7 @@ To load the driver:
 sudo modprobe rtl8xxxu
 This command loads the driver into the kernel, allowing the Wi-Fi adapter to be recognized.
 
-4. Set the Driver to Load at Boot (Optional)
+#4. Set the Driver to Load at Boot (Optional)
 To avoid manually loading the driver every time you reboot, you can configure the system to automatically load it at boot. Add the driver to /etc/modules:
 
 Edit the file:
@@ -37,7 +37,7 @@ Add the following line at the end:
 rtl8xxxu
 Save and exit (Ctrl+X, then Y, then Enter).
 
-5. Reboot and Verify
+#5. Reboot and Verify
 Reboot your system to ensure everything is working:
 
 sudo reboot
