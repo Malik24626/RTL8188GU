@@ -14,10 +14,12 @@ First, download the rtl8710bufw_SMIC.bin file from this repository.
 
 Using wget:
 
-wget https://github.com/Malik24626/rtl8188gu-kali-setup/raw/main/rtl8710bufw_SMIC.bin
+sudo git clon https://github.com/Malik24626/rtl8188gu-kali-setup/raw/main/rtl8710bufw_SMIC.bin
 
 # 2. Install the Firmware
 Copy the downloaded firmware file to the system firmware directory (/lib/firmware/rtlwifi/):
+
+cd ./rtl8188gu-kali-setup
 
 sudo cp rtl8710bufw_SMIC.bin /lib/firmware/rtlwifi/
 
